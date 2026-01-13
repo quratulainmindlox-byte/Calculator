@@ -4,11 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
+  
 }
 
 /* LIGHT MODE VARIABLES */
 :root {
-  --bg: #f4f4f4;
+   --bg: #000000;    
   --calc-bg: #ffffff;
   --btn-bg: #e0e0e0;
   --btn-text: #000;
