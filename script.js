@@ -43,3 +43,28 @@ toggleTheme.addEventListener("click", () => {
       ? "☀️ Light Mode"
       : "🌙 Dark Mode";
 });
+// KEYBOARD SUPPORT
+document.addEventListener("keydown", (e) => {
+  const key = e.key;
+
+  if (!isNaN(key) || "+-*/.%".includes(key)) {
+    currentInput += key;
+    display.value = currentInput;
+  }
+
+  if (key === "Enter") {
+    try {
+      display.value = eval(currentInput);
+      currentInput = display.value;
+    } catch {
+      display.value = "Error";
+      currentInput = "";
+    }
+  }
+
+  if (key === "Backspace") {
+    currentInput = currentInput.slice(0, -1);
+    display.value = currentInput;
+  }
+});
+
