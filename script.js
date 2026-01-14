@@ -68,3 +68,11 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+const clickSound = document.getElementById("clickSound");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+    clickSound.play();
+  });
+});
