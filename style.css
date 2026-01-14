@@ -115,3 +115,54 @@ button:hover {
 .zero {
   grid-column: span 2;
 }
+/* =========================
+   NEON GLOW BUTTON EFFECTS
+========================= */
+
+/* NORMAL BUTTON GLOW */
+button {
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+}
+
+button:hover {
+  box-shadow:
+    0 0 8px rgba(0, 255, 255, 0.6),
+    0 0 16px rgba(0, 255, 255, 0.5),
+    0 0 24px rgba(0, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* OPERATOR BUTTON NEON */
+.operator {
+  box-shadow:
+    0 0 6px rgba(255, 111, 97, 0.6),
+    0 0 12px rgba(255, 111, 97, 0.5);
+}
+
+.operator:hover {
+  box-shadow:
+    0 0 10px rgba(255, 111, 97, 0.8),
+    0 0 20px rgba(255, 111, 97, 0.7),
+    0 0 30px rgba(255, 111, 97, 0.6);
+}
+
+/* EQUAL BUTTON NEON */
+.equal {
+  box-shadow:
+    0 0 8px rgba(76, 175, 80, 0.7),
+    0 0 16px rgba(76, 175, 80, 0.6);
+}
+
+.equal:hover {
+  box-shadow:
+    0 0 14px rgba(76, 175, 80, 0.9),
+    0 0 28px rgba(76, 175, 80, 0.8),
+    0 0 40px rgba(76, 175, 80, 0.7);
+}
+
+/* ACTIVE PRESS EFFECT */
+button:active {
+  transform: scale(0.95);
+  box-shadow:
+    0 0 4px rgba(255, 255, 255, 0.5);
+}
